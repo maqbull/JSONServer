@@ -41,7 +41,7 @@ server.use((req , res ,next) => {
 
 // Use Default router 
 server.use(router)
-
-server.listen(3001, () => {
+const PORT = process.env.PORT || 3001
+server.listen(PORT, () => {
     console.log('Pet Store is running')
 })
